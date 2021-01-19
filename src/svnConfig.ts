@@ -17,22 +17,13 @@ const config: any = {
     //   thumbnail: '/tu-logo.png',
     // },
     {
-      name: 'AVÖV Gladbeck',
-      url: 'gladbeck',
-      description: 'AVÖV Projekt: Gladbeck NRW',
+      name: 'Berlin TRT',
+      url: 'Berlin',
+      description: 'Master Thesis Hugo',
       svn:
-        'https://svn.vsp.tu-berlin.de/repos/public-svn/matsim/scenarios/countries/de/gladbeck/avoev',
+        'https://svn.vsp.tu-berlin.de/repos/public-svn/matsim/scenarios/countries/de/berlin/projects/trtberlin',
       need_password: false,
       thumbnail: '/thumb-gladbeck.jpg',
-    },
-    {
-      name: 'AVÖV Vulkaneifel',
-      url: 'vulkaneifel',
-      description: 'AVÖV Projekt: Vulkaneifel RP',
-      svn:
-        'https://svn.vsp.tu-berlin.de/repos/public-svn/matsim/scenarios/countries/de/vulkaneifel/avoev',
-      need_password: false,
-      thumbnail: '/thumb-vulkaneifel.jpg',
     },
   ],
 }
