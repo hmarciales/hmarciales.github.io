@@ -19,7 +19,7 @@ const config: any = {
     {
       name: 'Berlin TRT',
       url: 'Berlin',
-      description: 'Master Thesis Hugo',
+      description: 'Master Thesis Hugo Castro',
       svn:
         'https://svn.vsp.tu-berlin.de/repos/public-svn/matsim/scenarios/countries/de/berlin/projects/trtberlin',
       need_password: false,
