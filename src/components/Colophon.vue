@@ -5,26 +5,21 @@
       img(src="@/assets/images/tu-logo.png")
   .professor Kai Nagel, Professor
 
-  .team TU AVÖV Team
+  .team TU VSP
 
-  p Ihab Kaddoura
+  p Hugo Castro
   p Gregor Leich
-  p Billy Charlton
 
 
   .team Contact
 
-  p.nonbreak: a(href="mailto:sekretariat@vsp.tu-berlin.de") Email
+  p.nonbreak: a(href="mailto:castro@vsp.tu-berlin.de") Email
 
   .team Projektpartner
 
-  .partners
-    p: a(href='https://www.uni-due.de/' target="_blank") Universität<br/>Duisburg-Essen
-    p: a(href='https://www.bvg.de/' target="_blank") Berliner&nbsp;Verkehrsbetriebe&nbsp;(BVG)
-    p: a(href='https://senozon.com' target="_blank") Senozon Deutschland GmbH
 
-  a(href='https://www.bmvi.de' target="_blank")
-    img(src="@/assets/images/logo-bmvi.png")
+  a(href='https://mobilityinstitute.com/' target="_blank")
+    img(src="@/assets/images/vsp-logo.png")
 
 </template>
 
