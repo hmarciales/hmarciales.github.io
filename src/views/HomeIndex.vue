@@ -3,7 +3,7 @@
   .page-area
     .banner
       h2 VSP / Technische Universität Berlin
-      h3 AVÖV Projekt Portal
+      h3 TRT Projekt Portal
 
     .content
       .main
