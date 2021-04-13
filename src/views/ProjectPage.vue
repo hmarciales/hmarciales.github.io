@@ -84,7 +84,7 @@ import mediumZoom from 'medium-zoom'
 import micromatch from 'micromatch'
 import yaml from 'yaml'
 
-import globalStore from '@/store.ts'
+import globalStore from '@/store'
 import plugins from '@/plugins/pluginRegistry'
 import Colophon from '@/components/Colophon.vue'
 import HTTPFileSystem from '@/util/HTTPFileSystem'
@@ -121,7 +121,7 @@ export default class VueComponent extends Vue {
 
   private mdRenderer = new markdown()
 
-  private svnp?: SVNProject
+  private svnp?: SVNProject = undefined
   private myState: IMyState = {
     errorStatus: '',
     folders: [],
