@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Vuex from 'vuex'
 
 import { BreadCrumb, ColorScheme, VisualizationPlugin } from '@/Globals'
-import svnConfig from '@/svnConfig.ts'
+import svnConfig from '@/svnConfig'
 
 Vue.use(Vuex)
 
@@ -16,8 +16,9 @@ export default new Vuex.Store({
     needLoginForUrl: '',
     statusMessage: 'loading',
     svnProjects: svnConfig.projects,
-    colorScheme: ColorScheme.DarkMode,
+    colorScheme: ColorScheme.LightMode,
     visualizationTypes: new Map() as Map<string, VisualizationPlugin>,
+    locale: 'en',
   },
   getters: {},
   mutations: {
@@ -41,6 +42,22 @@ export default new Vuex.Store({
     },
     setStatus(state, value: string) {
       state.statusMessage = value
+    },
+    setLocale(state, value: string) {
+      state.locale = value.toLocaleLowerCase()
+      localStorage.setItem('locale', state.locale)
+      console.log('NEW LOCALE:', state.locale)
+    },
+    rotateColors(state) {
+      state.colorScheme =
+        state.colorScheme === ColorScheme.DarkMode ? ColorScheme.LightMode : ColorScheme.DarkMode
+
+      console.log('NEW COLORS:', state.colorScheme)
+
+      localStorage.setItem('colorscheme', state.colorScheme)
+
+      document.body.style.backgroundColor =
+        state.colorScheme === ColorScheme.LightMode ? '#edebe4' : '#2d3133'
     },
   },
   actions: {},

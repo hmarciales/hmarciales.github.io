@@ -71,7 +71,7 @@ import markdown from 'markdown-it'
 import mediumZoom from 'medium-zoom'
 import micromatch from 'micromatch'
 import yaml from 'yaml'
-import globalStore from '@/store.ts'
+import globalStore from '@/store'
 import plugins from '@/plugins/pluginRegistry'
 import HTTPFileSystem from '@/util/HTTPFileSystem'
 import { BreadCrumb, VisualizationPlugin, SVNProject } from '../Globals'
@@ -104,7 +104,8 @@ export default class VueComponent extends Vue {
 
   private mdRenderer = new markdown()
 
-  private svnp?: SVNProject
+  private svnp?: SVNProject = undefined
+
   private myState: IMyState = {
     errorStatus: '',
     folders: [],
